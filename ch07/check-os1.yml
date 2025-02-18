@@ -6,5 +6,4 @@
     - name: Print os type
       ansible.builtin.debug:
         msg: "OS Type: {{ ansible_facts['distribution']}}"
-      when: ansible_facts['distribution'] == "CentOS" or ansible_facts['distribution'] == "Rocky"
-- facts['distribution'] == "CentOS"
+      when: ansible_facts['distribution'] == "CentOS" or ansible_facts['distribution'] == "Ubuntu"
